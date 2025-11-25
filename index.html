@@ -1,39 +1,66 @@
-<!doctype html>
-<html lang="pl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>hobbit wycieczka</title>
-  <style>
-    :root{--bg:#8732a8;--text:#e6eef8}
-    html,body{height:100%;margin:0}
-    body{
-      background:var(--bg);
-      color:var(--text);
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-      display:flex;
-      justify-content:flex-start; /* tekst u góry */
-      align-items:flex-start;
-      padding-top:80px; /* odstęp od góry */
-      padding-left:24px; /* niewielki odstęp od lewej */
-    }
-    h1{
-      margin:0;
-      font-size:3rem;
-      letter-spacing:0.02em;
-      text-transform:none;
-      font-weight:700;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hobbit Adventures</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>hobbit wycieczka</h1>
+  <header>
+    <h1>The Hobbit Adventures</h1>
+    <nav>
+      <a href="#story">Story</a>
+      <a href="#characters">Characters</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <section id="story">
+    <h2>About the Story</h2>
+    <p>
+      Follow the journey of Bilbo Baggins, a hobbit who leaves his cozy home to embark on an unexpected adventure across Middle-earth.
+    </p>
+  </section>
+
+  <section id="characters">
+    <h2>Characters</h2>
+    <ul>
+      <li>Bilbo Baggins – The brave hobbit protagonist</li>
+      <li>Gandalf – The wise wizard</li>
+      <li>Thorin Oakenshield – Leader of the dwarves</li>
+      <li>Smaug – The fearsome dragon</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="images">
+      <img src="hobbit1.jpg" alt="Bilbo's Journey">
+      <img src="hobbit2.jpg" alt="Gandalf">
+      <img src="hobbit3.jpg" alt="Middle-earth">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hobbit Adventures. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.fog.min.js"></script>
+  <script>
+    VANTA.FOG({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor: 0xffcc00,
+      midtoneColor: 0x336633,
+      lowlightColor: 0x222222,
+      baseColor: 0x112233
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
